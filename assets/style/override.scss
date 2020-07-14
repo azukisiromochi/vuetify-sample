@@ -1,0 +1,31 @@
+// Vuetify のスタイルを上書きする場合に利用する.
+// アプリ全体に反映されるため、個別に上書きしたい場合は各コンポーネントファイルに記載すること.
+
+.theme--light {
+
+  // ヘッダー
+  &.v-app-bar {
+    &.v-toolbar {
+      &.v-sheet {
+        background-color: $header-color !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  // サイドバー
+  &.v-navigation-drawer {
+    background-color: $side-menu-color !important;
+
+    div, i {
+      color: $table-title-bar-color !important;
+    }
+  }
+
+  // テーブルタイトルバー
+  &.table-title-bar {
+    &.v-card {
+      background-color: $table-title-bar-color !important;
+    }
+  }
+}

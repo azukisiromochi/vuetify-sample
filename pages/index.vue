@@ -27,3 +27,23 @@
 <script>
 export default {}
 </script>
+
+<style lang="scss">
+.theme--light.v-sheet--outlined {
+  border: none;
+  border-right: 2px solid;
+  border-image: linear-gradient(
+    #fff 0% 20%,
+    $table-title-bar-color 20% 80%,
+    #fff 80% 100%
+  );
+  border-image-slice: 1;
+}
+.table-title-bar.theme--light.v-sheet--outlined {
+  // @extend .no-border;
+  border: none;
+}
+.no-border {
+  border: none !important;
+}
+</style>

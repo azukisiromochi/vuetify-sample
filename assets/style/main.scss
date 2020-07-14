@@ -1,2 +1,8 @@
+// アプリ共通のスタイルを記載する.
+
 @import '~vuetify/src/styles/styles.sass';
-@import './variables.scss';
+@import './override.scss';
+
+main {
+  background-color: $background-color;
+}
