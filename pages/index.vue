@@ -40,8 +40,8 @@ export default {}
   border-image-slice: 1;
 }
 .table-title-bar.theme--light.v-sheet--outlined {
-  // @extend .no-border;
-  border: none;
+  @extend .no-border;
+  // border: none;
 }
 .no-border {
   border: none !important;
